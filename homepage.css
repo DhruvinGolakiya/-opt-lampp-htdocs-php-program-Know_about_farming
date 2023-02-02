@@ -1,0 +1,61 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main_container{
+	display: flex;
+	background-color: black;
+	justify-content: space-between;
+}
+
+.logo{
+	margin-left: 50px;
+	margin-top: 10px;
+}
+.menu ul{
+   list-style: none;
+	font-size: 30px;
+	display: flex;
+   gap: 40px;
+   margin-right: 50px;
+   margin-top: 50px;
+}
+
+.menu li{
+	color: white;
+}
+ 
+.main_container a{
+	text-decoration: none;
+}
+
+ 
+.slider{
+			height: 550px;
+			width: 100%;
+			background-image: url(/home/mukhi/Pictures/Know_about_farming/image1.jpg);
+			background-position: center center;
+			background-repeat: no-repeat;
+			background-size: 100% 100%;
+			animation-name: slide;
+			animation-duration: 30s;
+			animation-timing-function: linear;
+			animation-iteration-count: infinite;
+		}
+
+		@keyframes slide{
+			0%{
+				background-image: url(/home/mukhi/Pictures/Know_about_farming/image1.jpg);
+			}
+
+			35%{
+				background-image: url(/home/mukhi/Pictures/image1.jpg);
+			}
+
+			75%{
+				background-image: url(/home/mukhi/Pictures/Know_about_farming/image3.jpg);
+			}
+
+		}
